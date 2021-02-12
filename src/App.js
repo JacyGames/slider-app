@@ -1,12 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Item} from "./components/component";
+import ReactPageScroller from "react-page-scroller";
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,6 +20,24 @@ function App() {
         >
           Learn React
         </a>
+        <div className={"square"}/>
+        <div className={"square"}/>
+        <div className={"square"}/>
+        <div className={"square"}/>
+        <div className={"square"}/>
+        <div className={"square"}/>
+        <ReactPageScroller>
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+        </ReactPageScroller>
+
       </header>
     </div>
   );
